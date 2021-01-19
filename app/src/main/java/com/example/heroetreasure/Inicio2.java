@@ -3,6 +3,7 @@ package com.example.heroetreasure;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -16,11 +17,15 @@ public class Inicio2 extends AppCompatActivity {
     Clase clase;
     int textoParaMostrar = 0;
     TextView tv;
+    MediaPlayer sonidoBoton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio2);
         intent = getIntent();
+        sonidoBoton = MediaPlayer.create(this, R.raw.sonido_btn);
+        sonidoBoton.setVolume(0.1f, 0.1f);
+
         clase = (Clase) intent.getSerializableExtra("objeto");
         btn = findViewById(R.id.btnSiguiente);
         tv = findViewById(R.id.mostrarTexto);
@@ -28,6 +33,7 @@ public class Inicio2 extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sonidoBoton.start();
                 if(textoParaMostrar == 0){
                     tv.setText(R.string.locutor2);
                     textoParaMostrar++;

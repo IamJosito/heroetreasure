@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
@@ -22,10 +22,13 @@ public class EscogerNombre extends AppCompatActivity {
     TextView tv;
     ImageButton btn;
     EditText et;
+    MediaPlayer sonidoBoton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad2);
+        sonidoBoton = MediaPlayer.create(this,R.raw.sonido_btn);
+        sonidoBoton.setVolume(0.1f,0.1f);
 
         Intent intent = getIntent();
         final Clase clase = (Clase) intent.getSerializableExtra("objeto");
@@ -42,6 +45,7 @@ public class EscogerNombre extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sonidoBoton.start();
                 if(!et.getText().toString().isEmpty()){
                     clase.setNombre(et.getText().toString());
                     Intent intent = new Intent(EscogerNombre.this, CharlaConMarcus.class);

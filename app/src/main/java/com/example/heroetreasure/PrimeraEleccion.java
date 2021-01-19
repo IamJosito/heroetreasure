@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.Icon;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,6 +13,7 @@ public class PrimeraEleccion extends AppCompatActivity {
     ImageView img;
     Clase clase;
     TextView tvVida, tvAtaque, tvNombre, tvClase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,7 @@ public class PrimeraEleccion extends AppCompatActivity {
         tvVida = findViewById(R.id.mostrarVida);
         tvClase = findViewById(R.id.mostrarClase);
         tvNombre = findViewById(R.id.mostrarNombre);
+
 
         Intent intent = getIntent();
         clase = (Clase) intent.getSerializableExtra("objeto");
