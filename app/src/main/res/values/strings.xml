@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HeroeTreasure</string>
+    <string name="textoInicial">Bievenido a <font fgcolor="#DC2222">Heroe Treasure</font></string>
+    <string name="textoEscogerClase">Lo primero de todo escoge la <font fgcolor="#0082C7">clase</font>\n que desees.</string>
+    <string name="tvMago"><font fgcolor="#0088C7">Mago</font></string>
+    <string name="tvAsesino"><font fgcolor="#C70000">Asesino</font></string>
+    <string name="tvGuerrero"><font fgcolor="#C99F1E">Guerrero</font></string>
+    <string name="txtEscogeNombre">Escoge tu nombre</string>
+    <string name="txtMarcus1">Se que eres nuevo tío, pero vamos, el tesoro del rey es lo
+        único que nos puede salvar.</string>
+    <string name="txtMarcus2">Has sido el mejor en la acacdemia, quién
+        mejor que tú para hacer esto.</string>
+    <string name="txtMarcus3">Confio en ti Josito.</string>
+    <string name="vida">Vida:</string>
+    <string name="ataque">Ataque:</string>
+    <string name="locutor1">Bienvenido al mundo de Zenda. Escoge el camino correcto para sobrevivir
+        a los desafíos.</string>
+    <string name="locutor2">Hace aproximadamente 300 años el rey de Zenda, un rey abaricioso y ruín,
+        albergaba un profundo tesoro. </string>
+    <string name="locutor3">Un tesoro capaz de proporcionar la inmortalidad y un alto poder. </string>
+    <string name="locutor4">Tu misión, joven, es arrebatarselo para que pueda prosperar la humanidad.</string>
+
+</resources>
