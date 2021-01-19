@@ -41,7 +41,7 @@ public class Inicio extends AppCompatActivity {
             clase.setImage(R.drawable.assasin);
         }
 
-        Intent intent = new Intent(this, EscogerNombre.class);
+        Intent intent = new Intent(this, Inicio2.class);
         intent.putExtra("objeto", (Serializable) clase);
         startActivity(intent);
     }

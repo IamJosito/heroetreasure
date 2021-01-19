@@ -14,11 +14,11 @@
         android:background="@drawable/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/mostrarTexto"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/mostrarTexto"
         android:layout_width="411dp"
         android:layout_height="335dp"
         android:background="@drawable/textobackground3"
