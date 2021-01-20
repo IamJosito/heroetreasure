@@ -30,7 +30,7 @@ public class CharlaConMarcus extends AppCompatActivity {
         musicaTaverna.setVolume(0.1f,0.1f);
         musicaTaverna.start();
 
-        tv = findViewById(R.id.textoMarcus);
+        tv = findViewById(R.id.textoBandido);
         btn = findViewById(R.id.btnSiguiente);
         Intent intent = getIntent();
         clase = (Clase) intent.getSerializableExtra("objeto");

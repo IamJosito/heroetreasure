@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Inicio2"></activity>
+        <activity android:name=".PeleaBandido"></activity>
+        <activity android:name=".SeguirSendero" />
+        <activity android:name=".EleccionRio" />
+        <activity android:name=".EleccionBosque2" />
+        <activity android:name=".PeleaSlimeBosque" />
+        <activity android:name=".EleccionBosque" />
+        <activity android:name=".Inicio2" />
         <activity android:name=".PrimeraEleccion" />
         <activity android:name=".CharlaConMarcus" />
         <activity android:name=".EscogerNombre" />

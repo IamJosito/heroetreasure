@@ -2,7 +2,7 @@ package com.example.heroetreasure;
 
 import android.widget.ImageView;
 
-public interface Clase  {
+public interface Clase {
     void Cura();
     int Golpe1();
     int Golpe2();

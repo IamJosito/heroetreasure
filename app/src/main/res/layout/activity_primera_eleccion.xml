@@ -97,7 +97,51 @@
         android:id="@+id/imageButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:srcCompat="@drawable/montana"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="178dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/montana" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/bosque" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="209dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/textbox"
+        android:fontFamily="@font/atma_medium"
+        android:paddingLeft="74dp"
+        android:paddingTop="10dp"
+        android:text="@string/montana"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="209dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/textbox"
+        android:fontFamily="@font/atma_medium"
+        android:paddingLeft="74dp"
+        android:paddingTop="10dp"
+        android:text="@string/bosque"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

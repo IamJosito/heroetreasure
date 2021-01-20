@@ -8,7 +8,7 @@
     tools:context=".CharlaConMarcus">
 
     <TextView
-        android:id="@+id/textoMarcus"
+        android:id="@+id/textoBandido"
         android:layout_width="427dp"
         android:layout_height="208dp"
         android:layout_marginStart="40dp"

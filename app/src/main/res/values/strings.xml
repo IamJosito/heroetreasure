@@ -1,23 +1,62 @@
 <resources>
     <string name="app_name">HeroeTreasure</string>
+
     <string name="textoInicial">Bievenido a <font fgcolor="#DC2222">Heroe Treasure</font></string>
     <string name="textoEscogerClase">Lo primero de todo escoge la <font fgcolor="#0082C7">clase</font>\n que desees.</string>
+
     <string name="tvMago"><font fgcolor="#0088C7">Mago</font></string>
     <string name="tvAsesino"><font fgcolor="#C70000">Asesino</font></string>
     <string name="tvGuerrero"><font fgcolor="#C99F1E">Guerrero</font></string>
+
     <string name="txtEscogeNombre">Escoge tu nombre</string>
+
     <string name="txtMarcus1">Se que eres nuevo tío, pero vamos, el tesoro del rey es lo
         único que nos puede salvar.</string>
     <string name="txtMarcus2">Has sido el mejor en la acacdemia, quién
         mejor que tú para hacer esto.</string>
     <string name="txtMarcus3">Confio en ti Josito.</string>
+
     <string name="vida">Vida:</string>
     <string name="ataque">Ataque:</string>
+
     <string name="locutor1">Bienvenido al mundo de Zenda. Escoge el camino correcto para sobrevivir
         a los desafíos.</string>
     <string name="locutor2">Hace aproximadamente 300 años el rey de Zenda, un rey abaricioso y ruín,
         albergaba un profundo tesoro. </string>
     <string name="locutor3">Un tesoro capaz de proporcionar la inmortalidad y un alto poder. </string>
     <string name="locutor4">Tu misión, joven, es arrebatarselo para que pueda prosperar la humanidad.</string>
+
+    <string name="montana">Montaña</string>
+    <string name="bosque">Bosque</string>
+    <string name="camino_izq">Ir a la izquierda</string>
+    <string name="camino_der">Ir a la derecha</string>
+    <string name="seguir_camino">Seguir el sendero</string>
+    <string name="ir_lago">Ir al lago</string>
+    <string name="castillo">Ir al castillo</string>
+    <string name="rodear_castillo">Rodear el castillo</string>
+    <string name="volcan">Ir al volcán</string>
+    <string name="llanura">Ir a la llanura</string>
+    <string name="pico_helado">Ir al Pico Helado</string>
+    <string name="llanura_ignea">Ir a la Llanura Ignea</string>
+
+    <string name="pink_slime_hp">HP: 250</string>
+    <string name="red_slime_hp">HP: 250</string>
+    <string name="blue_slime_hp">HP: 250</string>
+
+    <string name="bandido_hp">HP: 350</string>
+
+    <string name="rey_hp">HP: 500</string>
+
+    <string name="golpe1">Puñetazo</string>
+    <string name="golpe2">Patada</string>
+    <string name="cura">Cura</string>
+
+    <string name="vida_recuperada">Has recuperado tu vida.</string>
+
+    <string name="hablarBandido">Hablar</string>
+    <string name="pelearBandido">Pelear</string>
+
+    <string name="bandido1">¡Tú quien eres y porque narices estas en mi zona!</string>
+    <string name="bandido2">¡Me importa una pepino lo que busques, estás en mi zona y aquí mando yo!</string>
 
 </resources>
