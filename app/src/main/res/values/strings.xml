@@ -47,6 +47,8 @@
 
     <string name="rey_hp">HP: 500</string>
 
+    <string name="soldado_hp">HP: 150</string>
+
     <string name="golpe1">Puñetazo</string>
     <string name="golpe2">Patada</string>
     <string name="cura">Cura</string>
@@ -59,4 +61,20 @@
     <string name="bandido1">¡Tú quien eres y porque narices estas en mi zona!</string>
     <string name="bandido2">¡Me importa una pepino lo que busques, estás en mi zona y aquí mando yo!</string>
 
+    <string name="pelar_soldado">Pelar</string>
+
+    <string name="txtHaySoldado">Hay un soldado defendiendo las puertas del castillo, ¿que deseas hacer?</string>
+
+    <string name="txtEntrarCastillo">Has conseguido involucrarte en el castillo, es hora de robar el tesoro.</string>
+
+    <string name="txtRey1">¿¡Que haces aquí!?</string>
+    <string name="txtRey2">Oh, has venido a ver a tu querídisimo rey. Y que quieres de mi, estoy muy ocupado.</string>
+    <string name="txtRey3">No tengo tiempo para esas chorradas. Vete de aquí y no me hagas perder mas el tiempo.</string>
+
+    <string name="eleccion_decir_verdad">Decir la verdad</string>
+    <string name="eleccion_mentir">Mentir</string>
+    <string name="eleccion_huir">Salir corriendo</string>
+
+    <string name="eleccion_tesoro">Tu tesoro</string>
+    <string name="eleccion_titulo_academio">El titulo de la academia</string>
 </resources>

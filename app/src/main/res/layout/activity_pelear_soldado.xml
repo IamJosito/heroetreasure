@@ -4,33 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EleccionRio">
+    tools:context=".PelearSoldado">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background_forest"
-        tools:context=".PrimeraEleccion"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <TextView
-            android:id="@+id/mostrarTexto2"
-            android:layout_width="337dp"
-            android:layout_height="207dp"
-            android:background="@drawable/textobackground3"
-            android:fontFamily="@font/atma_medium"
-            android:paddingLeft="20dp"
-            android:paddingTop="110dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:text="@string/vida_recuperada"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        tools:context=".PrimeraEleccion">
 
         <TextView
             android:id="@+id/textView7"
@@ -118,31 +98,66 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/hp" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="112dp"
-            android:backgroundTint="@android:color/transparent"
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="162dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mostrarTexto2"
-            app:srcCompat="@drawable/continuar_sendero" />
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:srcCompat="@drawable/soldado_castillo" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="209dp"
-            android:layout_height="59dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="152dp"
-            android:background="@drawable/textbox"
+            android:id="@+id/textView10"
+            android:layout_width="212dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/textbox_enemy_details"
             android:fontFamily="@font/atma_medium"
-            android:paddingLeft="50dp"
+            android:paddingLeft="70dp"
             android:paddingTop="10dp"
-            android:text="@string/seguir_camino"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toBottomOf="@+id/mostrarTexto2" />
+            android:text="@string/soldado_hp"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/golpe1"
+            android:layout_width="166dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="108dp"
+            android:background="@drawable/btn_golpes"
+            android:text="@string/golpe1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <Button
+            android:id="@+id/golpe2"
+            android:layout_width="166dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="108dp"
+            android:background="@drawable/btn_golpes"
+            android:text="@string/golpe2"
+            app:layout_constraintStart_toEndOf="@+id/golpe1"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <Button
+            android:id="@+id/cura"
+            android:layout_width="166dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="148dp"
+            android:background="@drawable/btn_golpes"
+            android:text="@string/cura"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/golpe2"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/golpe1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

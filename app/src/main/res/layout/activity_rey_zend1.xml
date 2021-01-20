@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SeguirSendero">
+    tools:context=".ReyZend1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background_forest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:context=".CharlaConMarcus">
 
         <TextView
@@ -39,7 +41,7 @@
             android:layout_marginTop="272dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bandido" />
+            app:srcCompat="@drawable/rey" />
 
         <Button
             android:id="@+id/golpe"
@@ -48,7 +50,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="56dp"
             android:background="@drawable/btn_golpes"
-            android:text="@string/hablarBandido"
+            android:text="@string/eleccion_decir_verdad"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textoBandido" />
 
@@ -59,9 +61,22 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="56dp"
             android:background="@drawable/btn_golpes"
-            android:text="@string/pelearBandido"
+            android:text="@string/eleccion_mentir"
             app:layout_constraintStart_toEndOf="@+id/golpe"
             app:layout_constraintTop_toBottomOf="@+id/textoBandido" />
+
+        <Button
+            android:id="@+id/golpe5"
+            android:layout_width="166dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/btn_golpes"
+            android:text="@string/eleccion_huir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/golpe3"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toEndOf="@+id/golpe" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

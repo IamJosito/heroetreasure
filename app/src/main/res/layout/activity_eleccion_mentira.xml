@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SeguirSendero">
+    tools:context=".EleccionMentira">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:paddingTop="50dp"
             android:paddingRight="80dp"
             android:paddingBottom="0dp"
-            android:text="@string/txtRey1"
+            android:text="@string/txtRey2"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
@@ -39,7 +39,7 @@
             android:layout_marginTop="272dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bandido" />
+            app:srcCompat="@drawable/rey" />
 
         <Button
             android:id="@+id/golpe"
@@ -48,7 +48,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="56dp"
             android:background="@drawable/btn_golpes"
-            android:text="@string/hablarBandido"
+            android:text="@string/eleccion_tesoro"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textoBandido" />
 
@@ -59,7 +59,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="56dp"
             android:background="@drawable/btn_golpes"
-            android:text="@string/pelearBandido"
+            android:text="@string/eleccion_titulo_academio"
             app:layout_constraintStart_toEndOf="@+id/golpe"
             app:layout_constraintTop_toBottomOf="@+id/textoBandido" />
 

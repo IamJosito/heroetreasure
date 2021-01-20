@@ -4,33 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EleccionRio">
+    tools:context=".EleccionCastillo">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_forest"
+        android:background="@drawable/background_city"
         tools:context=".PrimeraEleccion"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
-
-        <TextView
-            android:id="@+id/mostrarTexto2"
-            android:layout_width="337dp"
-            android:layout_height="207dp"
-            android:background="@drawable/textobackground3"
-            android:fontFamily="@font/atma_medium"
-            android:paddingLeft="20dp"
-            android:paddingTop="110dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:text="@string/vida_recuperada"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
             android:id="@+id/textView7"
@@ -122,27 +104,52 @@
             android:id="@+id/imageButton"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="112dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
             android:backgroundTint="@android:color/transparent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mostrarTexto2"
-            app:srcCompat="@drawable/continuar_sendero" />
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:srcCompat="@drawable/castillo" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:backgroundTint="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            app:srcCompat="@drawable/rodear_castillo" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="209dp"
             android:layout_height="59dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="152dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="136dp"
+            android:background="@drawable/textbox"
+            android:fontFamily="@font/atma_medium"
+            android:paddingLeft="65dp"
+            android:paddingTop="10dp"
+            android:text="@string/castillo"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="209dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="144dp"
             android:background="@drawable/textbox"
             android:fontFamily="@font/atma_medium"
             android:paddingLeft="50dp"
             android:paddingTop="10dp"
-            android:text="@string/seguir_camino"
+            android:text="@string/rodear_castillo"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toBottomOf="@+id/mostrarTexto2" />
-
+            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
