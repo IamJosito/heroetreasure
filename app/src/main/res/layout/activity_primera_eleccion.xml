@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrimeraEleccion">
+    tools:context=".PrimeraEleccion"
+    android:background="@drawable/background_city">
 
     <TextView
         android:id="@+id/textView7"
@@ -91,4 +92,12 @@
         app:layout_constraintStart_toEndOf="@+id/imagenPersonaje"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/hp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/montana"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="178dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
