@@ -9,11 +9,13 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.Serializable;
+
 public class PrimeraEleccion extends AppCompatActivity {
     ImageView img;
     Clase clase;
     TextView tvVida, tvAtaque, tvNombre, tvClase;
-    ImageButton btnMontana;
+    ImageButton btnMontana, btnBosque;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class PrimeraEleccion extends AppCompatActivity {
         tvClase = findViewById(R.id.mostrarClase);
         tvNombre = findViewById(R.id.mostrarNombre);
         btnMontana = findViewById(R.id.btnElecc1);
+        btnBosque = findViewById(R.id.btnElecc2);
 
         Intent intent = getIntent();
         clase = (Clase) intent.getSerializableExtra("objeto");
@@ -40,7 +43,18 @@ public class PrimeraEleccion extends AppCompatActivity {
         btnMontana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+               Intent pasarAMontana = new Intent(PrimeraEleccion.this, EleccionMontana.class);
+                pasarAMontana.putExtra("objeto", (Serializable) clase);
+               startActivity(pasarAMontana);
+            }
+        });
+
+        btnBosque.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pasarAlBosque = new Intent(PrimeraEleccion.this, EleccionBosque.class);
+                pasarAlBosque.putExtra("objeto", (Serializable) clase);
+                startActivity(pasarAlBosque);
             }
         });
 

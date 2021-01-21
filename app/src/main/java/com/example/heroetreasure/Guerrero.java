@@ -79,4 +79,9 @@ public class Guerrero implements Clase, Serializable {
         return this.ataque;
     }
 
+    @Override
+    public void restaurarVida() {
+        this.vida = 250;
+    }
+
 }

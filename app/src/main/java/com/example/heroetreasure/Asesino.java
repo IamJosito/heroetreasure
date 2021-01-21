@@ -60,6 +60,7 @@ public class Asesino implements Clase, Serializable {
         return codigoImagen;
     }
 
+    @Override
     public void setVida(int vida) {
         this.vida -= vida;
     }
@@ -77,5 +78,10 @@ public class Asesino implements Clase, Serializable {
     @Override
     public int getAtaque() {
         return this.ataque;
+    }
+
+    @Override
+    public void restaurarVida() {
+        this.vida = 100;
     }
 }

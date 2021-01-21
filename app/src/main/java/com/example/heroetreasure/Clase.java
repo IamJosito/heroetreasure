@@ -18,4 +18,6 @@ public interface Clase {
     void setAtaque(int ataque);
     int getAtaque();
 
+    void restaurarVida();
+
 }

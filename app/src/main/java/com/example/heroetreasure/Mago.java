@@ -80,5 +80,10 @@ public class Mago implements Clase, Serializable{
         return this.ataque;
     }
 
+    @Override
+    public void restaurarVida() {
+        this.vida = 180;
+    }
+
 
 }
