@@ -77,4 +77,9 @@
 
     <string name="eleccion_tesoro">Tu tesoro</string>
     <string name="eleccion_titulo_academio">El titulo de la academia</string>
+
+    <string name="fin">FIN</string>
+    <string name="txt_final">Gracias por jugar HeroeTreasure</string>
+    <string name="txt_final2">Hecho por Josito</string>
+    <string name="volver_jugar">Volver a jugar</string>
 </resources>

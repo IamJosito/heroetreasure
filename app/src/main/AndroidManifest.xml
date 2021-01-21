@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EleccionMentira"></activity>
+        <activity android:name=".EleccionPicoHelado"></activity>
+        <activity android:name=".EleccionMontana2" />
+        <activity android:name=".PeleaSlimeRojo" />
+        <activity android:name=".PeleaSlimeAzul" />
+        <activity android:name=".EleccionMontana" />
+        <activity android:name=".Fin" />
+        <activity android:name=".PeleaConRey" />
+        <activity android:name=".EleccionMentira" />
         <activity android:name=".ReyZend1" />
         <activity android:name=".EleccionRodearCastillo" />
         <activity android:name=".PelearSoldado" />

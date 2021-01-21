@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EleccionEntrarCastillo">
+    tools:context=".EleccionMontana2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_castle"
+        android:background="@drawable/background_mountain"
         tools:context=".PrimeraEleccion"
-        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
@@ -100,60 +100,56 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/hp" />
 
-        <Button
-            android:id="@+id/golpe4"
-            android:layout_width="166dp"
-            android:layout_height="68dp"
-            android:layout_marginStart="124dp"
-            android:layout_marginTop="284dp"
-            android:background="@drawable/btn_golpes"
-            android:text="@string/pelar_soldado"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/btnElecc1"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
             android:backgroundTint="@android:color/transparent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/golpe4"
-            app:srcCompat="@drawable/rodear_castillo" />
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:srcCompat="@drawable/pico_helado" />
+
+        <ImageButton
+            android:id="@+id/btnElecc2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:backgroundTint="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnElecc1"
+            app:srcCompat="@drawable/desfiladero_igneo" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textView4"
             android:layout_width="209dp"
             android:layout_height="59dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="136dp"
             android:background="@drawable/textbox"
             android:fontFamily="@font/atma_medium"
             android:paddingLeft="50dp"
             android:paddingTop="10dp"
-            android:text="@string/rodear_castillo"
+            android:text="@string/pico_helado"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/imageButton3"
-            app:layout_constraintTop_toBottomOf="@+id/golpe4" />
-
-        <TextView
-            android:id="@+id/mostrarTexto3"
-            android:layout_width="365dp"
-            android:layout_height="214dp"
-            android:background="@drawable/textobackground3"
-            android:fontFamily="@font/atma_medium"
-            android:paddingLeft="20dp"
-            android:paddingTop="60dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:text="@string/txtHaySoldado"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.486"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnElecc1"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="209dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="144dp"
+            android:background="@drawable/textbox"
+            android:fontFamily="@font/atma_medium"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:text="@string/llanura_ignea"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/btnElecc2"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

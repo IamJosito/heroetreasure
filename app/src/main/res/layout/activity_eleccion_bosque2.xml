@@ -101,7 +101,7 @@
             app:srcCompat="@drawable/hp" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btnElecc1"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="16dp"
@@ -112,14 +112,14 @@
             app:srcCompat="@drawable/continuar_sendero" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/btnElecc2"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="64dp"
             android:backgroundTint="@android:color/transparent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            app:layout_constraintTop_toBottomOf="@+id/btnElecc1"
             app:srcCompat="@drawable/rio" />
 
         <TextView
@@ -134,7 +134,7 @@
             android:paddingTop="10dp"
             android:text="@string/seguir_camino"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toEndOf="@+id/btnElecc1"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
@@ -149,7 +149,7 @@
             android:paddingTop="10dp"
             android:text="@string/ir_lago"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:layout_constraintStart_toEndOf="@+id/btnElecc2"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

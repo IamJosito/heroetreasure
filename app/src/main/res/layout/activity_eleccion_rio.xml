@@ -119,7 +119,7 @@
             app:srcCompat="@drawable/hp" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btnElecc1"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="28dp"
@@ -141,7 +141,7 @@
             android:paddingTop="10dp"
             android:text="@string/seguir_camino"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toEndOf="@+id/btnElecc1"
             app:layout_constraintTop_toBottomOf="@+id/mostrarTexto2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

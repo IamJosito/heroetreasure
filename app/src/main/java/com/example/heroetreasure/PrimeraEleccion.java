@@ -3,9 +3,9 @@ package com.example.heroetreasure;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.Icon;
-import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +13,7 @@ public class PrimeraEleccion extends AppCompatActivity {
     ImageView img;
     Clase clase;
     TextView tvVida, tvAtaque, tvNombre, tvClase;
+    ImageButton btnMontana;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,7 @@ public class PrimeraEleccion extends AppCompatActivity {
         tvVida = findViewById(R.id.mostrarVida);
         tvClase = findViewById(R.id.mostrarClase);
         tvNombre = findViewById(R.id.mostrarNombre);
-
+        btnMontana = findViewById(R.id.btnElecc1);
 
         Intent intent = getIntent();
         clase = (Clase) intent.getSerializableExtra("objeto");
@@ -33,6 +34,17 @@ public class PrimeraEleccion extends AppCompatActivity {
         tvAtaque.setText(String.valueOf(clase.getAtaque()));
         tvClase.setText(clase.getClase());
         tvNombre.setText(clase.getNombre());
+
+
+
+        btnMontana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
+
+
 
     }
 }
