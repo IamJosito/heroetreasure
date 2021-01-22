@@ -82,4 +82,8 @@
     <string name="txt_final">Gracias por jugar HeroeTreasure</string>
     <string name="txt_final2">Hecho por Josito</string>
     <string name="volver_jugar">Volver a jugar</string>
+
+    <string name="ir_al_final">Irse del castillo.</string>
+
+    <string name="volver_a_jugar">Volver a jugar</string>
 </resources>

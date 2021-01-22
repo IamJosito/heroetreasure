@@ -60,6 +60,7 @@ public class PeleaBandido extends AppCompatActivity {
                     Intent intent2 = new Intent(PeleaBandido.this, EleccionCastillo.class);
                     intent2.putExtra("objeto", (Serializable) clase);
                     startActivity(intent2);
+                    musicaPelea.stop();
                 }
                 Random rand = new Random();
                 int golpeSlime = rand.nextInt(10);
@@ -79,6 +80,7 @@ public class PeleaBandido extends AppCompatActivity {
                     Intent intent2 = new Intent(PeleaBandido.this, EleccionCastillo.class);
                     intent2.putExtra("objeto", (Serializable) clase);
                     startActivity(intent2);
+                    musicaPelea.stop();
                 }
                 Random rand = new Random();
                 int golpeSlime = rand.nextInt(10);

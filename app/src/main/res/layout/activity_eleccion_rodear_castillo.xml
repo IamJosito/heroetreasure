@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="0dp">
 
         <ImageButton
-            android:id="@+id/btnSiguiente2"
+            android:id="@+id/btnSiguiente"
             android:layout_width="142dp"
             android:layout_height="188dp"
             android:background="@drawable/next"
