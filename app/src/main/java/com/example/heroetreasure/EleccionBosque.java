@@ -3,6 +3,7 @@ package com.example.heroetreasure;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -16,6 +17,7 @@ public class EleccionBosque extends AppCompatActivity {
     Clase clase;
     TextView tvVida, tvAtaque, tvNombre, tvClase;
     ImageButton btnCaminoIzq, btnCaminoDer;
+    MediaPlayer sonidoBoton, musicaBosque;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,13 @@ public class EleccionBosque extends AppCompatActivity {
         btnCaminoIzq = findViewById(R.id.btnElecc1);
         btnCaminoDer = findViewById(R.id.btnElecc2);
 
+        sonidoBoton = MediaPlayer.create(this,R.raw.sonido_btn);
+        sonidoBoton.setVolume(0.1f,0.1f);
+
+        musicaBosque = MediaPlayer.create(this,R.raw.sonido_bosque);
+        musicaBosque.setVolume(0.5f, 0.5f);
+        musicaBosque.start();
+
         Intent intent = getIntent();
         clase = (Clase) intent.getSerializableExtra("objeto");
         img.setImageResource(clase.getImage());
@@ -41,30 +50,15 @@ public class EleccionBosque extends AppCompatActivity {
         View.OnClickListener peleaSlime = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("HAS ELEGIO UN CAMINO");
+                sonidoBoton.start();
                 Intent peleaSlime = new Intent(EleccionBosque.this, PeleaSlimeBosque.class);
                 peleaSlime.putExtra("objeto", (Serializable) clase);
                 startActivity(peleaSlime);
+                musicaBosque.stop();
             }
         };
 
-        btnCaminoDer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.out.println("HAS ELEGIO UN CAMINO");
-                Intent peleaSlime = new Intent(EleccionBosque.this, PeleaSlimeBosque.class);
-                peleaSlime.putExtra("objeto", (Serializable) clase);
-                startActivity(peleaSlime);
-            }
-        });
-        btnCaminoIzq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.out.println("HAS ELEGIO UN CAMINO");
-                Intent peleaSlime = new Intent(EleccionBosque.this, PeleaSlimeBosque.class);
-                peleaSlime.putExtra("objeto", (Serializable) clase);
-                startActivity(peleaSlime);
-            }
-        });
+        btnCaminoDer.setOnClickListener(peleaSlime);
+        btnCaminoIzq.setOnClickListener(peleaSlime);
     }
 }

@@ -3,12 +3,15 @@ package com.example.heroetreasure;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.Serializable;
 import java.util.Random;
 
 public class PeleaSlimeBosque extends AppCompatActivity {
@@ -16,11 +19,18 @@ public class PeleaSlimeBosque extends AppCompatActivity {
     Clase clase;
     TextView tvVida, tvAtaque, tvNombre, tvClase, vidaEnemigo;
     Button btnGolpe1, btnGolpe2, btnCura;
+    MediaPlayer sonidoBtn, musicaPelea;
     int vidaSlime = 150;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pelea_slime_bosque);
+
+        sonidoBtn = MediaPlayer.create(this,R.raw.sonido_btn);
+        sonidoBtn.setVolume(0.4f, 0.4f);
+        musicaPelea = MediaPlayer.create(this,R.raw.sonido_pelea);
+        musicaPelea.setVolume(0.5f, 0.5f);
+        musicaPelea.start();
 
         img = findViewById(R.id.imagenPersonaje);
         tvAtaque = findViewById(R.id.mostrarAtaque);
@@ -45,36 +55,47 @@ public class PeleaSlimeBosque extends AppCompatActivity {
         btnGolpe1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sonidoBtn.start();
                 vidaSlime -= clase.Golpe1();
+                if (vidaSlime <= 0){
+                    Intent intent2 = new Intent(PeleaSlimeBosque.this, EleccionBosque2.class);
+                    intent2.putExtra("objeto", (Serializable) clase);
+                    startActivity(intent2);
+                    musicaPelea.stop();
+                }
                 Random rand = new Random();
                 int golpeSlime = rand.nextInt(10);
                 clase.setVida(golpeSlime);
                 vidaEnemigo.setText("HP: " + vidaSlime);
                 tvVida.setText(String.valueOf(clase.getVida()));
-                if (vidaSlime <= 0){
-                    System.out.println("GANAS!!");
-                }
+
             }
         });
 
         btnGolpe2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sonidoBtn.start();
                 vidaSlime -= clase.Golpe2();
+                if (vidaSlime <= 0){
+                    Intent intent2 = new Intent(PeleaSlimeBosque.this, EleccionBosque2.class);
+                    intent2.putExtra("objeto", (Serializable) clase);
+                    startActivity(intent2);
+                    musicaPelea.stop();
+                }
                 Random rand = new Random();
                 int golpeSlime = rand.nextInt(10);
                 clase.setVida(golpeSlime);
                 vidaEnemigo.setText("HP: " + vidaSlime);
                 tvVida.setText(String.valueOf(clase.getVida()));
-                if (vidaSlime <= 0){
-                    System.out.println("GANAS!!");
-                }
+
             }
         });
 
         btnCura.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sonidoBtn.start();
                 clase.Cura();
                 Random rand = new Random();
                 int golpeSlime = rand.nextInt(10);
@@ -83,10 +104,5 @@ public class PeleaSlimeBosque extends AppCompatActivity {
                 tvVida.setText(String.valueOf(clase.getVida()));
             }
         });
-
-
-
-
-
     }
 }
